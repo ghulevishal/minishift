@@ -19,6 +19,7 @@ objects:
         containers:
          - name: rsvp-app
            image: teamcloudyuga/rsvpapp
+           imagePullPolicy: IfNotPresent 
            livenessProbe:
              httpGet:
                path: /
